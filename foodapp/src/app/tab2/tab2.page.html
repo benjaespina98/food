@@ -1,17 +1,44 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Alimentos
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-segment [(ngModel)]="selectedCategory" (ionChange)="onCategoryChange($event)" scrollable>
+    <ion-segment-button value="harinas">
+      Harinas
+    </ion-segment-button>
+    <ion-segment-button value="galletitas">
+      Galletitas
+    </ion-segment-button>
+    <ion-segment-button value="cereales">
+      Cereales
+    </ion-segment-button>
+    <ion-segment-button value="pastas">
+      Pastas
+    </ion-segment-button>
+  </ion-segment>
+  
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-searchbar (ionInput)="searchFood($event)" placeholder="Buscar alimentos"></ion-searchbar>
+
+  <ion-card *ngFor="let food of searchResults">
+    <ion-card-header (click)="showDetails(food)">
+      <ion-card-title>{{ food.name }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content *ngIf="selectedFood === food">
+      <p>{{ food.tamPorcion }}</p>
+      <p>Carbs: {{ food.carbs }}</p>
+      <!-- Agregar más detalles sobre el alimento si es necesario -->
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card *ngIf="searchResults.length === 0">
+    <ion-card-content>
+      No se encontraron resultados.
+    </ion-card-content>
+  </ion-card>
 </ion-content>
