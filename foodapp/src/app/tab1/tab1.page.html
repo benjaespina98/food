@@ -1,19 +1,32 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Categorías de Alimentos
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-<h1>Food</h1>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-card *ngFor="let category of categories">
+    <ion-card-header (click)="toggleCategory(category)">
+      <ion-card-title>
+        <ion-row>
+          <ion-col size="0.5">
+            <img [src]="category.image" *ngIf="category.image" alt="img" />
+          </ion-col>
+          <ion-col size="10">
+            {{ category.name }}
+          </ion-col>
+        </ion-row>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content *ngIf="category.expanded">
+      <ion-list *ngIf="category.foods">
+        <ion-item *ngFor="let food of category.foods">
+          <ion-label>{{ food.name }}</ion-label>
+          <ion-label slot="end">{{ food.portion }}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
