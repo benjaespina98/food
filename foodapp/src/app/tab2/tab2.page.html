@@ -8,30 +8,33 @@
 
 <ion-content [fullscreen]="true">
   <ion-segment [(ngModel)]="selectedCategory" (ionChange)="onCategoryChange($event)" scrollable>
-    <ion-segment-button value="harinas">
-      Harinas
+    <ion-segment-button value="almidones">
+      Almidones
     </ion-segment-button>
-    <ion-segment-button value="galletitas">
-      Galletitas
+    <ion-segment-button value="dulces">
+      Dulces
     </ion-segment-button>
-    <ion-segment-button value="cereales">
-      Cereales
+    <ion-segment-button value="frutas">
+      Frutas
     </ion-segment-button>
-    <ion-segment-button value="pastas">
-      Pastas
+    <ion-segment-button value="lacteos">
+      Lácteos
+    </ion-segment-button>
+    <ion-segment-button value="otros">
+      Otros
     </ion-segment-button>
   </ion-segment>
   
 
   <ion-searchbar (ionInput)="searchFood($event)" placeholder="Buscar alimentos"></ion-searchbar>
 
-  <ion-card *ngFor="let food of searchResults">
+  <ion-card *ngFor="let food of searchResults" class="custom-card">
     <ion-card-header (click)="showDetails(food)">
       <ion-card-title>{{ food.name }}</ion-card-title>
     </ion-card-header>
     <ion-card-content *ngIf="selectedFood === food">
-      <p>{{ food.tamPorcion }}</p>
-      <p>Carbs: {{ food.carbs }}</p>
+      <p class="larger-text">{{ food.tamPorcion }}</p>
+      <p class="larger-text"> {{ food.carbs }} Carbs</p>
       <!-- Agregar más detalles sobre el alimento si es necesario -->
     </ion-card-content>
   </ion-card>
