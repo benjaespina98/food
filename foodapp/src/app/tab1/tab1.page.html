@@ -1,30 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Categorías de Alimentos
+      Menúes
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-card *ngFor="let category of categories">
-    <ion-card-header (click)="toggleCategory(category)">
-      <ion-card-title>
-        <ion-row>
-          <ion-col size="0.5">
-            <img [src]="category.image" *ngIf="category.image" alt="img" />
-          </ion-col>
-          <ion-col size="10">
-            {{ category.name }}
-          </ion-col>
-        </ion-row>
-      </ion-card-title>
+  <ion-card *ngFor="let day of days" (click)="showMeals(day)">
+    <ion-card-header>
+      <ion-card-title>{{ day }}</ion-card-title>
     </ion-card-header>
-    <ion-card-content *ngIf="category.expanded">
-      <ion-list *ngIf="category.foods">
-        <ion-item *ngFor="let food of category.foods">
-          <ion-label>{{ food.name }}</ion-label>
-          <ion-label slot="end">{{ food.portion }}</ion-label>
+    <ion-card-content *ngIf="selectedDay === day">
+      <ion-list>
+        <ion-item *ngFor="let meal of meals">
+          <ion-label>{{ meal }}</ion-label>
+          <!-- Agregar información para cada comida -->
         </ion-item>
       </ion-list>
     </ion-card-content>

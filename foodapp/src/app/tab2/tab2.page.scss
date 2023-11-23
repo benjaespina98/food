@@ -1,0 +1,20 @@
+ion-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  ion-card:hover {
+    transform: scale(1.02);
+  }
+  
+  ion-card ion-img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  ion-card-header {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
