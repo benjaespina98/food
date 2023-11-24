@@ -236,7 +236,7 @@ export class Tab2Page {
       { name: 'Empanada árabe', tamPorcion: '1 unidad', carbs: 30, category: 'otros' },
       { name: 'Humita en chala', tamPorcion: '1 unidad', carbs: 30, category: 'otros' },
       { name: 'Humita', tamPorcion: '1 porción de 150 g', carbs: 30, category: 'otros' },
-      { name: 'Locro', tamPorcion: '1 plato hondo', carbs: 575, category: 'otros' },
+      { name: 'Locro', tamPorcion: '1 plato hondo', carbs: 75, category: 'otros' },
       { name: 'Sushi roll', tamPorcion: '3 unidades', carbs: 15, category: 'otros' },
       { name: 'Gohan', tamPorcion: '1 porción (150 g)', carbs: 45, category: 'otros' },
       { name: 'Chipá', tamPorcion: '1 unidad pequeña', carbs: 15, category: 'otros' },
