@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss'],
 })
 export class Tab1Page {
-  days: string[] = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
+  days: string[] = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'];
   selectedDay: string | null = null;
   menus: { [key: string]: string[][] } = {
     Lunes: [
@@ -129,8 +129,9 @@ export class Tab1Page {
   }
 
   isSelectedMenu(day: string, menu: string): boolean {
-    return this.selectedDay === day && this.selectedMenu === menu;
+    return this.selectedDay === day && this.selectedMenu === menu.toString();
   }
+  
 
   getMenuForDay(day: string): string[] {
     return this.menus[day].map((_menu, index) => `Menú ${index + 1}`);
