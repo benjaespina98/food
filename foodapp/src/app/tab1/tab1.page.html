@@ -7,17 +7,23 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-card *ngFor="let day of days" (click)="showMeals(day)">
-    <ion-card-header>
+  <ion-card *ngFor="let day of days">
+    <ion-card-header (click)="showMenu(day)">
       <ion-card-title>{{ day }}</ion-card-title>
     </ion-card-header>
     <ion-card-content *ngIf="selectedDay === day">
-      <ion-list>
-        <ion-item *ngFor="let meal of meals">
-          <ion-label>{{ meal }}</ion-label>
-          <!-- Agregar información para cada comida -->
-        </ion-item>
-      </ion-list>
+      <ion-card *ngFor="let m of getMenuForDay(day)">
+        <ion-card-header (click)="showSubMenu(m)">
+          <ion-card-title>
+            {{ m }}
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content *ngIf="isSelectedMenu(day, m)">
+          <div *ngFor="let item of getMenuItems(day, m)">
+            <span [innerHTML]="item.replace('Desayuno:', '<strong>Desayuno:</strong>').replace('Almuerzo:', '<strong>Almuerzo:</strong>').replace('Merienda:', '<strong>Merienda:</strong>').replace('Cena:', '<strong>Cena:</strong>')"></span>
+          </div>
+        </ion-card-content>
+      </ion-card>
     </ion-card-content>
   </ion-card>
 </ion-content>
