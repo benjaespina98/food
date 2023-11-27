@@ -14,8 +14,6 @@
     <ion-card-content *ngIf="selectedDay === day">
       <ion-card *ngFor="let m of getMenuForDay(day)">
         <ion-card-content>
-          <h2></h2>
-          <br>
           <div *ngFor="let item of getMenuItems(day, m)">
             <span [innerHTML]="item.replace('Desayuno:', '<strong>Desayuno:</strong>').replace('Media mañana:', '<strong>Media mañana:</strong>').replace('Almuerzo:', '<strong>Almuerzo:</strong>').replace('Merienda:', '<strong>Merienda:</strong>').replace('Cena:', '<strong>Cena:</strong>')"></span>
           </div>
