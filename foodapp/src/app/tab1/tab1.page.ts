@@ -11,100 +11,69 @@ export class Tab1Page {
   menus: { [key: string]: string[][] } = {
     Lunes: [
       [
-        'Desayuno: Omelette de espinacas y queso con una porción de frutas (banana, naranja) y agua',
-        'Almuerzo: Milanesas de pollo al horno con ensalada de lechuga, tomate y rodajas de banana, acompañado con limonada',
-        'Merienda: Yogur natural con frutos secos y agua',
-        'Cena: Pescado a la parrilla con zanahorias y zapallitos al vapor, acompañado con agua'
+        'Desayuno: Dos panes nube en sándwich (con una feta de queso descremado y una feta de jamón cocido) + infusión con leche descremada con edulc.',
+        'Media mañana: Una fruta + un puñado de frutos secos.',
+        'Almuerzo:  Bife de pollo a la plancha con ensalada de rucula, tomate y palta + 2 vasos de agua',
+        'Merienda: Dos frutas cortadas y un puñado de frutos secos + infusión con leche descremada con edulc.',
+        'Cena: Omelette (2 huevos) relleno de queso con ensalada de zanahoria rallada, tomate y choclo + 2 vasos de agua',
       ],
-      [
-        'Desayuno: Batido de proteínas con espinacas, banana y leche de almendras y agua',
-        'Almuerzo: Pechuga de pollo a la plancha con ensalada de zanahoria rallada, tomate y naranja en gajos, acompañado con limonada',
-        'Merienda: Rodajas de manzana con mantequilla de almendras y agua',
-        'Cena: Bistec a la plancha con ensalada mixta y huevo duro, acompañado con agua'
-      ],
+      
     ],
     Martes: [
       [
-        'Desayuno: Taza de yogur natural con nueces y una porción de frutas (mandarina, manzana) y agua',
-        'Almuerzo: Sopa de verduras con albóndigas de carne y rodajas de naranja, acompañado con agua',
-        'Merienda: Queso fresco con bastones de zanahoria y agua',
-        'Cena: Salmón al horno con ensalada de lechuga, tomate y huevo duro, acompañado con agua'
-      ],
-      [
-        'Desayuno: Revuelto de huevo con espinacas y queso, acompañado de una porción de frutas (banana, manzana) y agua',
-        'Almuerzo: Ensalada griega con pollo a la parrilla (pepino, tomate, aceitunas, queso feta) y rodajas de mandarina, acompañado con limonada',
-        'Merienda: Puñado de almendras y nueces y agua',
-        'Cena: Berenjenas rellenas de carne y vegetales al horno, acompañado con agua'
+        'Desayuno: Un huevo revuelto, dos rollitos de jamón cocido y queso descremado y un puñado de frutos secos + infusión con leche descremada con edulc.',
+        'Media mañana: Un yogur descremado + una fruta.',
+        'Almuerzo: Costeleta de cerdo con verduras al horno (calabaza, zanahoria, berenjena, pimiento y cebolla) + 2 vasos de agua',
+        'Merienda: Una rodaja de pan integral con una feta de queso descremado y una feta de jamón cocido + infusión con leche descremada con edulc.',
+        'Cena: Ensalada de tomate, zanahoria rallada, lentejas, atun, un huevo duro y trocitos de queso + 2 vasos de agua',
       ],
     ],
     Miercoles: [
       [
-        'Desayuno: Batido de bayas con espinacas, huevo y nueces, acompañado de una porción de frutas (naranja, manzana) y agua',
-        'Almuerzo: Bistec de ternera con ensalada de zapallitos y una porción de frutas (mandarina, manzana), acompañado con agua',
-        'Merienda: Queso fresco con rodajas de banana y agua',
-        'Cena: Pollo al curry con rodajas de naranja, acompañado con agua'
-      ],
-      [
-        'Desayuno: Omelette de champiñones con una porción de frutas (mandarina, manzana) y agua',
-        'Almuerzo: Pescado al horno con ensalada de lechuga, tomate y rodajas de banana, acompañado con agua',
-        'Merienda: Puñado de almendras y nueces y agua',
-        'Cena: Ensalada de salmón ahumado con huevo duro y frutas (banana, naranja), acompañado con agua'
+        'Desayuno: Bowl con yogur descremado, un puñado de frutos secos y una fruta cortada + infusión con leche descremada con edulc.',
+        'Media mañana: Un yogur descremado + un puñado de frutos secos.',
+        'Almuerzo: Bife de carne con revuelto de zapallitos + 2 vasos de agua',
+        'Merienda: Una rodaja de pan integral con trocitos de palta y un huevo revuelto + infusión con leche descremada con edulc.',
+        'Cena: Hamburguesa de legumbres (NUTREE) con ensalada de zanahoria rallada y un huevo duro + 2 vasos de agua',
       ],
     ],
     Jueves: [
       [
-        'Desayuno: Batido de proteínas con espinacas, maní sin sal y una porción de frutas (manzana, mandarina) y agua',
-        'Almuerzo: Pollo a la parrilla con ensalada de zanahoria rallada, cebolla y una porción de frutas (naranja, banana), acompañado con agua',
-        'Merienda: Queso fresco con rodajas de mandarina y agua',
-        'Cena: Bistec a la plancha con ensalada mixta y huevo duro, acompañado con agua'
+        'Desayuno: Una tostada de pan integral con queso untable descremado y un huevo revuelto + infusión con leche descremada con edulc.',
+        'Media mañana: Una barrita de cereal (sugiero marca INTEGRA) + una fruta.',
+        'Almuerzo: Canelones de verdura + 2 vasos de agua',
+        'Merienda: Yogur descremado, 2 cucharadas de granola sin azúcar o de frutos secos y una fruta cortada + infusión con leche descremada con edulc.',
+        'Cena: Milanesa de carne al horno con ensalada de lechuga y tomate + 2 vasos de agua',
       ],
-      [
-        'Desayuno: Omelette de queso y tomate con una porción de frutas (banana, manzana) y agua',
-        'Almuerzo: Salmón al horno con batata asada y una porción de frutas (naranja, mandarina), acompañado con agua',
-        'Merienda: Puñado de almendras y nueces y agua',
-        'Cena: Ensalada de carne de vaca con zapallo anco asado y rodajas de naranja, acompañado con agua'
-      ],
+      
     ],
     Viernes: [
       [
-        'Desayuno: Yogur natural con frutos secos y una porción de frutas (banana, manzana) y agua',
-        'Almuerzo: Ensalada de pollo con lechuga, tomate, cebolla y una porción de frutas (naranja, mandarina), acompañado con limonada',
-        'Merienda: Rodajas de manzana con mantequilla de almendras y agua',
-        'Cena: Pescado a la parrilla con calabacines grillados y una porción de frutas (mandarina, banana), acompañado con agua'
+        'Desayuno: Una tostada de pan integral con queso untable descremado y mermelada sin azúcar y una fruta cortada + infusión con leche descremada con edulc.',
+        'Media mañana: Un huevo revuelto con dos rollitos de jamón cocido y queso descremado.',
+        'Almuerzo:  Bife de pollo a la plancha con rodajas de calabaza a la pizza (queso + tomate) al horno + 2 vasos de agua',
+        'Merienda: 4 galletitas de salvado con queso untable descremado y mermelada sin azúcar y una fruta cortada + infusión con leche descremada con edulc.',
+        'Cena: Tarta de atún (sólo con la masa de base), 2 porciones + ensalada + 2 vasos de agua',
       ],
-      [
-        'Desayuno: Batido de frutos rojos con espinacas, nueces y una porción de frutas (naranja, manzana) y agua',
-        'Almuerzo: Bistec de ternera con ensalada de zapallitos y zanahorias ralladas y una porción de frutas (mandarina, banana), acompañado con agua',
-        'Merienda: Queso fresco con bastones de zanahoria y agua',
-        'Cena: Pollo al curry con zapallo anco asado y una porción de frutas (naranja, manzana), acompañado con agua'
-      ],
+      
     ],
     Sabado: [
       [
-        'Desayuno: Omelette de espinacas y queso con una porción de frutas (banana, naranja) y agua',
-        'Almuerzo: Pescado al horno con ensalada de lechuga, tomate y rodajas de mandarina, acompañado con agua',
-        'Merienda: Yogur natural con frutos secos y agua',
-        'Cena: Pollo a la parrilla con ensalada mixta y una porción de frutas (manzana, naranja), acompañado con agua'
+        'Desayuno: 4 galletitas de salvado con queso untable descremado y mermelada sin azúcar y una fruta cortada + infusión con leche descremada con edulc.',
+        'Media mañana: Un yogur descremado + una fruta.',
+        'Almuerzo:  Milanesa de soja con tortillitas de zanahoria + 2 vasos de agua',
+        'Merienda: Pan nube con queso untable descremado y una fruta cortada + infusión con leche descremada con edulc.',
+        'Cena: Lomo al plato + 2 vasos de agua'
       ],
-      [
-        'Desayuno: Batido de proteínas con espinacas, banana y leche de almendras y agua',
-        'Almuerzo: Bistec a la plancha con ensalada de zapallitos y zanahorias ralladas y una porción de frutas (mandarina, manzana), acompañado con agua',
-        'Merienda: Puñado de almendras y nueces y agua',
-        'Cena: Ensalada de salmón ahumado con huevo duro y frutas (banana, naranja), acompañado con agua'
-      ],
+
     ],
     Domingo: [
       [
-        'Desayuno: Batido de proteínas con espinacas, huevo y nueces y agua',
-        'Almuerzo (Asado): Asado con carne de vaca, chorizo, morcilla, ensalada mixta y una porción de frutas (mandarina, banana) y una copa de vino',
-        'Merienda: Puñado de almendras y una porción de frutas (manzana, naranja) y agua',
-        'Cena: Ensalada de pollo con lechuga, tomate, cebolla y una porción de frutas (banana, naranja) y agua'
-      ],
-      [
-        'Desayuno: Omelette de champiñones con una porción de frutas (mandarina, manzana) y agua',
-        'Almuerzo: Pescado a la parrilla con ensalada de lechuga, tomate y una porción de frutas (naranja, banana) y agua',
-        'Merienda: Rodajas de manzana con mantequilla de almendras y agua',
-        'Cena: Bistec de ternera con ensalada de zapallitos y zanahorias ralladas y una porción de frutas (manzana, naranja) y agua'
+        'Desayuno: Bowl con yogur descremado, un puñado de frutos secos y una fruta cortada + infusión con leche descremada con edulc.',
+        'Media mañana: Un yogur descremado + un puñado de frutos secos.',
+        'Almuerzo: Carne asada con ensalada o verduras a la parrilla + 2 vasos de agua',
+        'Merienda: Un yogur descremado y una barrita de cereal (INTEGRAL) + infusión con leche descremada con edulc.',
+        'Cena: Revuelto de arvejas con verduras al horno o ensalada + 2 vasos de agua'  
       ],
     ],
 
@@ -117,20 +86,10 @@ export class Tab1Page {
     } else {
       this.selectedDay = day;
     }
-    this.selectedMenu = null; // Reiniciar el menú seleccionado al cambiar de día
   }
 
-  showSubMenu(menu: string) {
-    if (this.selectedMenu === menu) {
-      this.selectedMenu = null;
-    } else {
-      this.selectedMenu = menu;
-    }
-  }
 
-  isSelectedMenu(day: string, menu: string): boolean {
-    return this.selectedDay === day && this.selectedMenu === menu.toString();
-  }
+ 
   
 
   getMenuForDay(day: string): string[] {
